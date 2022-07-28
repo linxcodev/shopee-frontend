@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .btn-primary {
+        @apply py-2 px-4 text-sm bg-blue-500 text-white font-semibold rounded-md shadow-md 
+        hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75;
+    }
+}
+
+
+@layer base {
+    :root {
+        --primary-color: #ee4d2d;
+        --white-color: #fff;
+        --black-color: #000;
+        --text-color: #333;
+        --border-color: #dbdbdb;
+        --start-gold-color: #FFCE3e;
+        --header-height: 120px;
+        --navbar-height: 34px;
+        --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+        --header-sort-bar-height: 46px;
+    }
+}
