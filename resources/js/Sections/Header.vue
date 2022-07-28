@@ -1,17 +1,10 @@
 <script setup>
-import { Head, Link } from "@inertiajs/inertia-vue3";
-
 defineProps({
   canLogin: Boolean,
-  canRegister: Boolean,
-  laravelVersion: String,
-  phpVersion: String,
 });
 </script>
 
 <template>
-  <Head title="Home" />
-
   <header
     class="
       h-[var(--header-height)]
@@ -205,21 +198,21 @@ defineProps({
         </div>
 
         <div class="flex-1 mx-16">
-            <input type="text" class="w-full" placeholder="Search" name="" id="">
+          <input
+            type="text"
+            class="w-full"
+            placeholder="Search"
+            name=""
+            id=""
+          />
         </div>
 
         <div>
-            <i class="fab fa-facebook"></i>
+          <i class="fab fa-facebook"></i>
         </div>
       </div>
     </div>
   </header>
-
-  <div class="bg-[#f5f5f5]"> 
-    <div class="max-w-6xl m-auto">
-      kajhdfa
-    </div>
-  </div>
 </template>
 
 <script>
